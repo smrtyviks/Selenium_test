@@ -112,8 +112,8 @@ public class MyStepdefs {
             }else{
                 expectedtxt= countdownval+" seconds";
             }
-           Assert.assertEquals(expectedtxt,actualtext);
-            
+           Assert.assertEquals(actualtext,expectedtxt);
+            countdownval=actualcountdown;
             TimeUnit.SECONDS.sleep(1);
             countdownval=countdownval-1;
         }
