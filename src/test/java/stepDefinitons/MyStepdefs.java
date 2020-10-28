@@ -75,7 +75,7 @@ public class MyStepdefs {
     }
 
     @Then("I should be asked to enter valid period")
-    public void iShouldBeAskedToEnterValidPeriod() {
+    public void iShouldBeAskedToEnterValidPeriod()throws Throwable {
         driver.findElement(By.xpath("//*[contains(., 'Enter valid period')]"));
     }
 

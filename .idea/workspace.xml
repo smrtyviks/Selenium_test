@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3ea0c43-edf0-4471-b134-56fb16b96f68" name="Default Changelist" comment="" />
+    <list default="true" id="a3ea0c43-edf0-4471-b134-56fb16b96f68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitons/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitons/MyStepdefs.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
