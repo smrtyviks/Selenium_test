@@ -22,8 +22,8 @@ public class Hook {
     @Before("@web")
     public void setUp()
     {
-        //WebDriverManager.chromedriver().setup();
-        driver = new SafariDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         baseURL="https://e.ggtimer.com/";
