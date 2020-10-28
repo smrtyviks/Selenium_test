@@ -99,21 +99,28 @@ public class MyStepdefs {
 
         Assert.assertTrue(driver.findElement(txtCountdown).isDisplayed());
 
-        int countdownval=Integer.parseInt(driver.findElement(txtCountdown).getText().substring(0,2).trim());
+        int countdownval=Integer.parseInt(arg0.substring(0,2).trim());
+                //Integer.parseInt(driver.findElement(txtCountdown).getText().substring(0,2).trim());
 
 
 
         while(countdownval>0){
             String actualtext=driver.findElement(txtCountdown).getText();
             actualcountdown=Integer.parseInt(driver.findElement(txtCountdown).getText().substring(0,2).trim());
-
-            if(actualcountdown == 1){
+            countdownval=actualcountdown;
+            if(countdownval == 1){
                 expectedtxt= countdownval+" second";
             }else{
                 expectedtxt= countdownval+" seconds";
             }
+
+
+
            Assert.assertEquals(actualtext,expectedtxt);
-            countdownval=actualcountdown;
+            System.out.println("actual:"+ actualtext);
+
+            System.out.println("expected:"+ expectedtxt);
+
             TimeUnit.SECONDS.sleep(1);
             countdownval=countdownval-1;
         }
