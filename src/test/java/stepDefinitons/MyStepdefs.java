@@ -123,7 +123,7 @@ public class MyStepdefs {
            Assert.assertEquals(actualtext,expectedtxt);
 
 
-            TimeUnit.MILLISECONDS.sleep(990);
+            TimeUnit.MILLISECONDS.sleep(960);
 
             //TimeUnit.SECONDS.sleep(1);
             countdownval=countdownval-1;
