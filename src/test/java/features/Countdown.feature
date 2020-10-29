@@ -12,7 +12,7 @@ Feature: Countdown Functionality
     Examples:
       |  Gobtn | period |
       |  GO!  | 25 seconds  |
-  @web1
+  @web
  Scenario Outline: Countdown Negative Flow
     Given I am on the eggtimer application
     And I See Input field for period

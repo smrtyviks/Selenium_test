@@ -111,14 +111,14 @@ public class MyStepdefs {
         while(countdownval>0){
             String actualtext=driver.findElement(txtCountdown).getText();
 
-            System.out.println("Actual:"+ actualtext);
+
             if(countdownval == 1){
                 expectedtxt= countdownval+" second";
             }else{
                 expectedtxt= countdownval+" seconds";
             }
 
-            System.out.println("Expected:"+ expectedtxt);
+            
 
            Assert.assertEquals(actualtext,expectedtxt);
 
