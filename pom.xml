@@ -88,12 +88,12 @@
                     <executions>
                         <execution>
                             <id>execution</id>
-                            <phase>verify</phase>
+                            <phase>test</phase>
                             <goals>
                                 <goal>generate</goal>
                             </goals>
                             <configuration>
-                                <projectName>MyProjectName</projectName>
+                                <projectName>Selenium_test</projectName>
                                 <outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
                                 <cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
                                 <buildNumber>1</buildNumber>

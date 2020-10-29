@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 @CucumberOptions(features={"src//test//java//features"}
         ,glue={"stepDefinitons","Utility"}
-        ,plugin = {"pretty", "html:target/cucumber"}
+        ,plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
         ,tags = ("@web")
 
 )
